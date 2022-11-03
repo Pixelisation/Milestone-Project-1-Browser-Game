@@ -16,7 +16,9 @@ function results() {
  const q8 = document.getElementById("Quiz").question8.value
  const q9 = document.getElementById("Quiz").question9.value
  const q10 = document.getElementById("Quiz").question10.value
- 
+ let results = document.getElementById("results")
+ let quiz = document.getElementById("Quiz") 
+
  if (q1 == "2001") {score++};
  if (q2 == "Elf") {score++};
  if (q3 == "ottsel") {score++};
@@ -27,9 +29,14 @@ function results() {
  if (q8 == "because naughty dog thought that mute protagonists were the way at the time") {score++};
  if (q9 == "2") {score++};
  if (q10 == "Morgan") {score++};
- document.write(score)
-}
 
+ quiz.style.display = "none" //hides the form and shows the users results
+  if (score <= 5) {
+    results.textContent = `Your results is ${score}/10. I guess jak and daxter is not one your favorite game.` 
+  } else {
+    results.textContent = `Your results is ${score}/10. One of your favorite games is jak and daxter.`
+  }
+}
 /*
 console.log score
 making a score out of 10
