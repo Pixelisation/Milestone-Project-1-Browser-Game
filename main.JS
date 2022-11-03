@@ -17,34 +17,21 @@ function results() {
  const q9 = document.getElementById("Quiz").question9.value
  const q10 = document.getElementById("Quiz").question10.value
  
- if (q1 == "A") {score++}
- if (q2 == "B") {score++}
- if (q3 == "A") {score++}
- if (q4 == "C") {score++}
- if (q5 == "A") {score++}
- if (q6 == "A") {score++}
- if (q7 == "D") {score++}
- if (q8 == "D") {score++}
- if (q9 == "C") {score++}
- if (q10 == "A") {score++}
- console.log(score)
+ if (q1 == "2001") {score++};
+ if (q2 == "Elf") {score++};
+ if (q3 == "ottsel") {score++};
+ if (q4 == "500 years in the future") {score++};
+ if (q5 == "17") {score++};
+ if (q6 == "10 hours") {score++};
+ if (q7 == "Jak and Daxter: the Precursor Legacy") {score++};
+ if (q8 == "because naughty dog thought that mute protagonists were the way at the time") {score++};
+ if (q9 == "2") {score++};
+ if (q10 == "Morgan") {score++};
+ document.write(score)
 }
-
-
-
 
 /*
 console.log score
 making a score out of 10
-some how show score to the user with JS
+somehow show score to the user with JS
 */
-
-
-
-
-
-
-
-
-
-
