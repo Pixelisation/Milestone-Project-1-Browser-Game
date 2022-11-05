@@ -12,7 +12,7 @@ result.addEventListener("click", results);
 function startGame() {
 console.log("Hope your have a good day!");
 startButton.style.display = "none";
-formContainerElement.classList.remove('hide')
+formContainerElement.classList.remove('hide' )
 }
 
 
