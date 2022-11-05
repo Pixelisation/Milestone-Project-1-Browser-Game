@@ -14,6 +14,12 @@
 .Title {
   margin-left: 170px;
   color: black;
+  background-color: #574C62;
+  border-radius: 15px;
+  width: 510px;
+  height: 35px;
+  box-shadow: 4px 5px 5px;
+  padding: 10px;
 }
 
 #Quiz {
