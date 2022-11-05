@@ -10,7 +10,7 @@ result.addEventListener("click", results);
 
 //to Start the game 
 function startGame() {
-console.log("Start");
+console.log("Hope your have a good day!");
 startButton.style.display = "none";
 formContainerElement.classList.remove('hide')
 }
@@ -70,13 +70,13 @@ function results() {
 
   quiz.style.display = "none"; //hides the form and shows the users results
   if (score <= 5) {
-    results.textContent = `Your results is ${score}/10. I guess jak and daxter is not one of your favorite game.`;
+    results.textContent = `Your score is ${score}/10. I guess jak and daxter is not one of your favorite games.`;
   } else {
-    results.textContent = `Your results is ${score}/10. One of your favorite games is jak and daxter.`;
+    results.textContent = `Your score is ${score}/10. Jak and daxter is one of your favorite games.`;
   }
 }
 
 // Making sure the user clicks on the radio buttons before submitting the form
 
 
-// Ask if the user wants to play again
+
