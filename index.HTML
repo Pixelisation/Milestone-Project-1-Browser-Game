@@ -11,7 +11,10 @@
     <div class="background-image">
       <div id="container for quiz and title">
         <h1 class="Title">Jak and Daxter trivia Quiz</h1>
-        <form id="Quiz" type="hidden" >
+        <div id="start-btn-container">
+          <button id="start-btn">Start Quiz</button>
+        </div>
+        <form id="Quiz" class="hide">
           <div id="Questions-1">
             <label for="Question-1">1. When did jal and Daxter: The Precursor Legacy come out?</label> 
             <br>
@@ -93,11 +96,13 @@
             <p><input type="radio" name="question10" value="Jasper"/> D. Jasper</p>
           </div>
 
-          <input id="submit-btn" type="button" value=" Done!" onclick="results"/>
+          <input id="submit-btn" type="button" value="Done" onclick="results"/>
         </form>
       </div>
     </div>
+   <div class="container-for-results">
     <p id="results"></p>
+   </div>
     <script src="./main.JS"></script>
   </body>
 </html>
