@@ -9,17 +9,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 111vh;
+  position: relative;
 }
 
 .Title {
   margin-left: 170px;
   color: black;
-  background-color: #574C62;
+  background-color: #574c62;
   border-radius: 15px;
   width: 510px;
   height: 35px;
   box-shadow: 4px 5px 5px;
   padding: 10px;
+}
+
+.hide {  
+  display: none;
 }
 
 #Quiz {
@@ -45,4 +50,35 @@
   border: 1px solid #eee;
   border-radius: 20px;
   text-shadow: none;
+}
+
+.container-for-results {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+#start-btn-container{
+  text-align: center;
+}
+/* took it from W3 Schools*/
+#start-btn {
+  margin-top: 500px;
+  margin-left: 350px;
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#start-btn:hover{
+  background-color: #ddd;
+  color: black;
 }
