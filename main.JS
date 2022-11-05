@@ -20,7 +20,7 @@ formContainerElement.classList.remove('hide')
 // check if the user answer is correct or not
 function results() {
   let score = 0;
-
+ 
   const q1 = document.getElementById("Quiz").question1.value;
   const q2 = document.getElementById("Quiz").question2.value;
   const q3 = document.getElementById("Quiz").question3.value;
@@ -76,7 +76,7 @@ function results() {
   }
 }
 
-// Making sure the user clicks on the radio buttons before submitting the form
+// Making sure the user clicks on the radio buttons before clicking done
 
 
 
