@@ -1,44 +1,82 @@
+const startButton = document.getElementById("start-btn")
+startButton.addEventListener("click", startGame)
+
+const formContainerElement = document.getElementById("Quiz")
+
 const result = document.getElementById("submit-btn");
 result.addEventListener("click", results);
 
 
-// check if the user answer is correct or not 
+
+//to Start the game 
+function startGame() {
+console.log("Start");
+startButton.style.display = "none";
+formContainerElement.classList.remove('hide')
+}
+
+
+
+// check if the user answer is correct or not
 function results() {
- let score = 0
- 
- const q1 = document.getElementById("Quiz").question1.value
- const q2 = document.getElementById("Quiz").question2.value
- const q3 = document.getElementById("Quiz").question3.value
- const q4 = document.getElementById("Quiz").question4.value
- const q5 = document.getElementById("Quiz").question5.value
- const q6 = document.getElementById("Quiz").question6.value
- const q7 = document.getElementById("Quiz").question7.value
- const q8 = document.getElementById("Quiz").question8.value
- const q9 = document.getElementById("Quiz").question9.value
- const q10 = document.getElementById("Quiz").question10.value
- let results = document.getElementById("results")
- let quiz = document.getElementById("Quiz") 
+  let score = 0;
 
- if (q1 == "2001") {score++};
- if (q2 == "Elf") {score++};
- if (q3 == "ottsel") {score++};
- if (q4 == "500 years in the future") {score++};
- if (q5 == "17") {score++};
- if (q6 == "10 hours") {score++};
- if (q7 == "Jak and Daxter: the Precursor Legacy") {score++};
- if (q8 == "because naughty dog thought that mute protagonists were the way at the time") {score++};
- if (q9 == "2") {score++};
- if (q10 == "Morgan") {score++};
+  const q1 = document.getElementById("Quiz").question1.value;
+  const q2 = document.getElementById("Quiz").question2.value;
+  const q3 = document.getElementById("Quiz").question3.value;
+  const q4 = document.getElementById("Quiz").question4.value;
+  const q5 = document.getElementById("Quiz").question5.value;
+  const q6 = document.getElementById("Quiz").question6.value;
+  const q7 = document.getElementById("Quiz").question7.value;
+  const q8 = document.getElementById("Quiz").question8.value;
+  const q9 = document.getElementById("Quiz").question9.value;
+  const q10 = document.getElementById("Quiz").question10.value;
+  let results = document.getElementById("results");
+  let quiz = document.getElementById("Quiz");
 
- quiz.style.display = "none" //hides the form and shows the users results
+  if (q1 == "2001") {
+    score++;
+  }
+  if (q2 == "Elf") {
+    score++;
+  }
+  if (q3 == "ottsel") {
+    score++;
+  }
+  if (q4 == "500 years in the future") {
+    score++;
+  }
+  if (q5 == "17") {
+    score++;
+  }
+  if (q6 == "10 hours") {
+    score++;
+  }
+  if (q7 == "Jak and Daxter: the Precursor Legacy") {
+    score++;
+  }
+  if (
+    q8 ==
+    "because naughty dog thought that mute protagonists were the way at the time"
+  ) {
+    score++;
+  }
+  if (q9 == "2") {
+    score++;
+  }
+  if (q10 == "Morgan") {
+    score++;
+  }
+
+  quiz.style.display = "none"; //hides the form and shows the users results
   if (score <= 5) {
-    results.textContent = `Your results is ${score}/10. I guess jak and daxter is not one your favorite game.` 
+    results.textContent = `Your results is ${score}/10. I guess jak and daxter is not one of your favorite game.`;
   } else {
-    results.textContent = `Your results is ${score}/10. One of your favorite games is jak and daxter.`
+    results.textContent = `Your results is ${score}/10. One of your favorite games is jak and daxter.`;
   }
 }
-/*
-console.log score
-making a score out of 10
-somehow show score to the user with JS
-*/
+
+// Making sure the user clicks on the radio buttons before submitting the form
+
+
+// Ask if the user wants to play again
