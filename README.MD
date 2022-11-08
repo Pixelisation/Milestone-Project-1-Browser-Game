@@ -1,5 +1,5 @@
 # Torian's Quiz
-Hi my name is Torian and I made a quiz about one of my favorite games **Jak and Daxter**
+Hi my name is Torian and I made a quiz about one of my favorite games **Jak and Daxter** the website does not work well on mobile
 
 ![the main screen for the quiz](/image/mainpage.png)
 
