@@ -23,6 +23,10 @@
   padding: 10px;
 }
 
+audio{
+  margin-left: 1327px;
+}
+
 .hide {  
   display: none;
 }
@@ -86,3 +90,4 @@
   background-color: #ddd;
   color: black;
 }
+
